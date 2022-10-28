@@ -1,8 +1,7 @@
 import React from 'react';
 import { gql, useQuery } from "urql";
 import { MainTitle } from "../../components/MainTitle";
-import { Card } from '../../components/Card';
-import { StyledGridWrapper, StyledGrid, StyledGridItem } from "./styled-components";
+import { StyledGrid, StyledGridItem, StyledLink } from "./styled-components";
 
 const query = gql`
   query Home {
@@ -30,7 +29,9 @@ const HomePage = () => {
       <StyledGrid>
         {data && data.allPeople.edges.map((item: any, index: number) => (
           <StyledGridItem key={index}>
-            <Card key={item.node.id} title={item.node.name} />
+            <StyledLink to={`/person/${item.node.id}`}>
+              {item.node.name}
+            </StyledLink>
           </StyledGridItem>
         ))}
       </StyledGrid>

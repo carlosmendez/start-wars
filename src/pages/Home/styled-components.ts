@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import styled from '@emotion/styled';
 
 export const StyledGrid = styled.div`
@@ -16,9 +17,17 @@ export const StyledGridItem = styled.div`
     grid-column-end: span 4;
   }
   
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px 0;
+  border: 1px solid #feda4a;;
+  padding: 40px 0;
   text-align: center;
   margin: 8px;
+`;
+
+export const StyledLink = styled(Link)`
+  color: #feda4a;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    font-weight: bold;
+  }
 `;

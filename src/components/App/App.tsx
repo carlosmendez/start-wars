@@ -7,17 +7,25 @@ type AppProps = {
   children: ReactNode,
 };
 
+const GlobalStyles = () => <Global styles={css`
+  ${emotionReset}
+  body {
+    color: #feda4a;
+    background-color: #000;
+    font-family: sans-serif;
+  }
+`}
+/>;
+
 const App = ({
-  children,
+ children,
 }: AppProps) => {
   return (
     <>
-      <Global styles={css`${emotionReset}`} />
-      <StyledMain>
-        {children}
-      </StyledMain>
+      <GlobalStyles/>
+      <StyledMain>{children}</StyledMain>
     </>
   )
 }
 
-export { App };
+export {App};
