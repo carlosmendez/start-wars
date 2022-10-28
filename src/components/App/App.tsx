@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { Global, css } from '@emotion/react';
-import emotionReset from "emotion-reset";
+import emotionNormalize from 'emotion-normalize';
 import { StyledMain } from "./styled-components";
 
 type AppProps = {
@@ -8,7 +8,7 @@ type AppProps = {
 };
 
 const GlobalStyles = () => <Global styles={css`
-  ${emotionReset}
+  ${emotionNormalize}
   body {
     color: #feda4a;
     background-color: #000;
