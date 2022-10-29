@@ -1,34 +1,26 @@
 import React from 'react';
-import { gql, useQuery } from "urql";
+import useGetPeople from "../../utils/hooks/useGetPeople";
 import { MainTitle } from "../../components/MainTitle";
 import { StyledGrid, StyledGridItem, StyledLink } from "./styled-components";
 
-const query = gql`
-  query Home {
-    allPeople {
-      edges {
-        node {
-          id
-          name
-        }
-      }
-    }
-  }
-`;
-
 const HomePage = () => {
-  const [result] = useQuery({ query });
-  const { data, fetching, error } = result;
+  const {
+    data,
+    fetching,
+    error
+  } = useGetPeople();
 
   if (fetching) return <p>Loading...</p>;
   if (error) return <p>Oh no... {error.message}</p>;
+
+  const {allPeople} = data;
+  const {edges} = allPeople;
 
   return (
     <>
       <MainTitle>People</MainTitle>
       <StyledGrid>
-        {/*TODO: add types to 'item'*/}
-        {data && data.allPeople.edges.map((item: any, index: number) => (
+        {edges.map((item: AllPeopleNodeType, index: number) => (
           <StyledGridItem key={index}>
             <StyledLink to={`/person/${item.node.id}`}>
               {item.node.name}

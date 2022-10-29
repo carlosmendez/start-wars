@@ -5,7 +5,7 @@ interface UsePaginationProps {
 }
 
 interface UsePaginationReturn {
-  page: number;
+  currentPage: number;
   nextPage: () => void;
   prevPage: () => void;
   hasNextPage: boolean;
@@ -16,24 +16,19 @@ interface UsePaginationReturn {
 const usePagination = ({
   total
 }: UsePaginationProps): UsePaginationReturn => {
-  const [page, setPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const nextPage = () => {
-    if (page < total) setPage(page + 1);
-    setPage(total);
-  };
-
-  const prevPage = () => {
-    if (page > 1) setPage(page - 1);
-    setPage(1);
-  };
+  const hasNextPage = currentPage < total;
+  const hasPrevPage = currentPage > 1;
+  const nextPage = () => hasNextPage ? setCurrentPage(currentPage + 1) : null;
+  const prevPage = () => hasPrevPage ? setCurrentPage(currentPage -1 ) : null;
 
   return {
-    page,
+    currentPage,
     nextPage: () => nextPage(),
     prevPage: () => prevPage(),
-    hasNextPage: page < total,
-    hasPrevPage: page > 1,
+    hasNextPage: currentPage < total,
+    hasPrevPage: currentPage > 1,
   };
 };
 
