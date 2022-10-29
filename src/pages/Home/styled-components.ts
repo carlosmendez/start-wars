@@ -18,16 +18,20 @@ export const StyledGridItem = styled.div`
   }
   
   border: 1px solid #feda4a;;
-  padding: 40px 0;
   text-align: center;
   margin: 8px;
 `;
 
 export const StyledLink = styled(Link)`
+  display: block;
   color: #feda4a;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 30px;
   &:hover {
     font-weight: bold;
+    opacity: 0.5;
+    background-color: #feda4a;
+    color: #000;
   }
 `;

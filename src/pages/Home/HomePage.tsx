@@ -27,6 +27,7 @@ const HomePage = () => {
     <>
       <MainTitle>People</MainTitle>
       <StyledGrid>
+        {/*TODO: add types to 'item'*/}
         {data && data.allPeople.edges.map((item: any, index: number) => (
           <StyledGridItem key={index}>
             <StyledLink to={`/person/${item.node.id}`}>
