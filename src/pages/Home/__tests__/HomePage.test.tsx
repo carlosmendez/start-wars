@@ -2,9 +2,9 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider, CombinedError } from 'urql';
 import { never, fromValue } from 'wonka';
-import HomePage from "./HomePage";
-import {BrowserRouter as Router} from 'react-router-dom';
-import allPeopleResponse from '../../../test/mocks/allPeopleResponse.json';
+import HomePage from "../HomePage";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { mockPeople} from "../__mocks__/mocks";
 
 describe('Home Page component', () => {
   it('It renders correctly with response Success', () => {
@@ -12,26 +12,7 @@ describe('Home Page component', () => {
       executeQuery: () =>
         fromValue({
           data: {
-            "allPeople": {
-              "edges": [
-                {
-                  "node": {
-                    "name": "Luke Skywalkexxr",
-                    "id": "cGVvcGxlOjE=",
-                    "species": 50
-                  }
-                },
-                {
-                  "node": {
-                    "name": "C-3PO",
-                    "id": "cGVvcGxlOjI=",
-                    "species": {
-                      "averageHeight": null
-                    }
-                  }
-                }
-              ]
-            }
+            ...mockPeople
           }
         }),
     };

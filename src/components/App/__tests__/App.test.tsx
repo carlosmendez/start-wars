@@ -1,15 +1,15 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { MainTitle } from "./MainTitle";
+import { App } from "../App";
 
-const props = {
-  name: "Star Wars characters"
-};
+const MockChildren = () => <div>....mockChildrenComponent</div>;
 
-describe('MainTitle component', () => {
+describe('App component', () => {
   it('renders correctly', () => {
     const jsx = (
-      <MainTitle {...props} />
+      <App>
+        <MockChildren />
+      </App>
     );
     const tree = renderer
       .create(jsx)

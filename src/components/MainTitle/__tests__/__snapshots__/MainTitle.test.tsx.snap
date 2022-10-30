@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index renders correctly 1`] = `
-<h1
-  className="css-1yltisf"
->
-  Star Wars characters
-</h1>
-`;
-
 exports[`MainTitle component renders correctly 1`] = `
 <h1
   className="css-1yltisf"

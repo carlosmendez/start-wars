@@ -1,15 +1,16 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { App } from "./App";
+import { PersonFilms } from "../PersonFilms";
+import { mockFilms } from "../__mocks__/mocks";
 
-const MockChildren = () => <div>....mockChildrenComponent</div>;
+const props = {
+  films: mockFilms
+};
 
-describe('App component', () => {
+describe('PersonFilms component', () => {
   it('renders correctly', () => {
     const jsx = (
-      <App>
-        <MockChildren />
-      </App>
+      <PersonFilms {...props} />
     );
     const tree = renderer
       .create(jsx)

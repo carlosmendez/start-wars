@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PersonFilms component renders correctly 1`] = `
+[
+  <h2>
+    Films
+  </h2>,
+  <p>
+    A New Hope
+  </p>,
+  <p>
+    1977-05-25
+  </p>,
+  <p>
+    Number of planets without water in the film: 
+    0
+  </p>,
+  <div
+    className="css-h8cf3b"
+  >
+    <button
+      className="css-1c0184g"
+      onClick={[Function]}
+      visibility="hidden"
+    >
+      Prev
+    </button>
+    <button
+      className="css-fgi0ou"
+      onClick={[Function]}
+    >
+      Next
+    </button>
+  </div>,
+]
+`;
