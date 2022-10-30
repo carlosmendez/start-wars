@@ -10,6 +10,7 @@ const props = {
 describe('PersonFilms component', () => {
   it('renders correctly', () => {
     const jsx = (
+      // @ts-ignore
       <PersonFilms {...props} />
     );
     const tree = renderer

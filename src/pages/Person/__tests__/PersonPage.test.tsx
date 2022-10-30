@@ -18,6 +18,7 @@ describe('Person Page component', () => {
     };
 
     const jsx = (
+      // @ts-ignore
       <Provider value={successState}>
         <Router>
           <PersonPage />
@@ -41,6 +42,7 @@ describe('Person Page component', () => {
     };
 
     const jsx = (
+      // @ts-ignore
       <Provider value={errorState}>
         <PersonPage />
       </Provider>
@@ -56,6 +58,7 @@ describe('Person Page component', () => {
       executeQuery: jest.fn(() => never),
     };
     const jsx = (
+      // @ts-ignore
       <Provider value={fetchingState}>
         <PersonPage />
       </Provider>
