@@ -11,9 +11,31 @@ exports[`Person Page component It renders correctly with response Success 1`] = 
     Birth year: 
     19BBY
   </h2>,
-  <h2>
+  <h3>
     List of producers the person has worked with and how many times.
-  </h2>,
+  </h3>,
+  <ul>
+    <li>
+      Gary Kurtz
+      : 
+      2
+    </li>
+    <li>
+      George Lucas
+      : 
+      1
+    </li>
+    <li>
+      Howard G. Kazanjian
+      : 
+      1
+    </li>
+    <li>
+      Rick McCallum
+      : 
+      4
+    </li>
+  </ul>,
   <a
     href="/"
     onClick={[Function]}

@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { PersonFilms } from "../PersonFilms";
-import { mockFilms } from "../__mocks__/mocks";
+import { mockFilms } from "../__mocks__/mocksFilm";
 
 const props = {
   films: mockFilms

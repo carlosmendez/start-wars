@@ -4,7 +4,7 @@ import { Provider, CombinedError } from 'urql';
 import { never, fromValue } from 'wonka';
 import {BrowserRouter as Router} from 'react-router-dom';
 import PersonPage from "../PersonPage";
-import { mockPerson } from '../__mocks__/mocks'
+import { mockPerson } from '../__mocks__/mocksPerson';
 
 describe('Person Page component', () => {
   it('It renders correctly with response Success', () => {
