@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import styled from '@emotion/styled';
+import { COLORS, BG_COLORS } from "../../utils/ui/constants";
 
 export const StyledGrid = styled.div`
   display: grid;
@@ -16,7 +17,7 @@ export const StyledGridItem = styled.div`
   @media only screen and (min-width: 768px) {
     grid-column-end: span 4;
   }
-  background-color: #282727;
+  background-color: ${BG_COLORS.SECONDARY};
   border-radius: 8px;
   text-align: center;
   margin: 8px;
@@ -31,6 +32,6 @@ export const StyledLink = styled(Link)`
   text-transform: uppercase;
   padding: 30px;
   &:hover {
-    color: rgb(255, 228, 0);
+    color: ${COLORS.SECONDARY};
   }
 `;

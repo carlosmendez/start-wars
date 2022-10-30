@@ -2,11 +2,16 @@
 
 exports[`Person Page component It renders correctly with response Success 1`] = `
 [
-  <h1
-    className="css-mj9wkl"
+  <div
+    className="css-1mxmwia"
   >
-    Luke Skywalker
-  </h1>,
+    <h1>
+      START WARS
+    </h1>
+    <h2>
+      Luke Skywalker
+    </h2>
+  </div>,
   <p>
     <small>
       Birth year:
@@ -38,7 +43,7 @@ exports[`Person Page component It renders correctly with response Success 1`] = 
     4
   </p>,
   <span
-    className="css-10pwxnt"
+    className="css-ht9l73"
   >
     <a
       href="/"

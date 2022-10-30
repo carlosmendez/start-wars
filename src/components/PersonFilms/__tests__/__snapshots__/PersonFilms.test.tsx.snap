@@ -20,16 +20,16 @@ exports[`PersonFilms component renders correctly 1`] = `
     </p>
   </div>,
   <div
-    className="css-2g5sox"
+    className="css-lk48ot"
   >
     <a
-      className="hidden css-34vzbs"
+      className="hidden css-9w870c"
       onClick={[Function]}
     >
       Prev
     </a>
     <a
-      className=" css-34vzbs"
+      className=" css-9w870c"
       onClick={[Function]}
     >
       Next

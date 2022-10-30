@@ -2,15 +2,16 @@ import React, { ReactNode } from 'react';
 import { StyledMainTitle } from "./styled-components";
 
 type MainTitleProps = {
-  name: string;
+  children: ReactNode;
 };
 
 const MainTitle = ({
-  name,
+  children,
 }: MainTitleProps) => {
   return (
     <StyledMainTitle>
-      {name}
+      <h1>START WARS</h1>
+      {children}
     </StyledMainTitle>
   )
 }

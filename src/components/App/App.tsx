@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { Global, css } from '@emotion/react';
 import emotionNormalize from 'emotion-normalize';
 import { StyledMain } from "./styled-components";
+import * as UI from '../../utils/ui/constants';
 
 type AppProps = {
   children: ReactNode;
@@ -10,9 +11,9 @@ type AppProps = {
 const GlobalStyles = () => <Global styles={css`
   ${emotionNormalize}
   body {
-    font-family: DIN, Helvetica, Arial, sans-serif;
-    background-color: #151515;
-    color: #FFF;
+    font-family: ${UI.FONT_FAMILY};
+    background-color: ${UI.BG_COLORS.MAIN};
+    color: ${UI.COLORS.MAIN};
   }
 `}
 />;

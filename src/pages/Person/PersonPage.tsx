@@ -31,7 +31,9 @@ const PersonPage = () => {
 
   return (
     <>
-      <MainTitle name={name} />
+      <MainTitle>
+        <h2>{name}</h2>
+      </MainTitle>
       <p><small>Birth year:</small> {birthYear}</p>
       <p>List of producers the person has worked with and how many times.</p>
       { producers && Object.entries(producers).map(([key, value], index) => (

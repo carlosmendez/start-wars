@@ -2,11 +2,16 @@
 
 exports[`Home Page component It renders correctly with response Success 1`] = `
 [
-  <h1
-    className="css-mj9wkl"
+  <div
+    className="css-1mxmwia"
   >
-    STAR WARS characters
-  </h1>,
+    <h1>
+      START WARS
+    </h1>
+    <h2>
+      Caracthers
+    </h2>
+  </div>,
   <div
     className="css-7ydzf1"
   >
