@@ -9,12 +9,12 @@ exports[`Person Page component It renders correctly with response Success 1`] = 
       STAR WARS
     </h1>
     <h2>
-      Luke Skywalker
+      mockName1
     </h2>
   </div>
   <p>
     Birth year: 
-    19BBY
+    mockBirthYear
   </p>
   <p>
     <i>
@@ -22,24 +22,19 @@ exports[`Person Page component It renders correctly with response Success 1`] = 
     </i>
   </p>
   <p>
-    Gary Kurtz
+    mockProducer1
     : 
     2
   </p>
   <p>
-    George Lucas
+    mockProducer2
     : 
     1
   </p>
   <p>
-    Howard G. Kazanjian
+    mockProducer3
     : 
     1
-  </p>
-  <p>
-    Rick McCallum
-    : 
-    4
   </p>
   <span
     class="css-ht9l73"

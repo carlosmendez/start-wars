@@ -43,8 +43,8 @@ const PersonFilms = ({
         <p>Number of planets without water in the film: {numPlanetsNoWater}</p>
       </StyledFilmContainer>
       <StyleNavitationContainer>
-        <StyledButton className={!hasPrevPage ? ButtonVisibilityEnum.HIDDEN : ''} onClick={prevPage}>Prev</StyledButton>
-        <StyledButton className={!hasNextPage ? ButtonVisibilityEnum.HIDDEN : ''} onClick={nextPage}>Next</StyledButton>
+        <StyledButton data-testid="films-prev" className={!hasPrevPage ? ButtonVisibilityEnum.HIDDEN : ''} onClick={prevPage}>Prev</StyledButton>
+        <StyledButton data-testid="films-next" className={!hasNextPage ? ButtonVisibilityEnum.HIDDEN : ''} onClick={nextPage}>Next</StyledButton>
       </StyleNavitationContainer>
     </>
   )

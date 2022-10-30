@@ -1,8 +1,8 @@
 import React from 'react';
-import {render} from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { Provider, CombinedError } from 'urql';
 import { never, fromValue } from 'wonka';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import PersonPage from "../PersonPage";
 import { mockPerson } from '../__mocks__/mocksPerson';
 
@@ -16,7 +16,7 @@ describe('Person Page component', () => {
           }
         }),
     };
-    const {container} = render(
+    const {container, getByText} = render(
       // @ts-ignore
       <Provider value={successState}>
         <Router>
@@ -25,6 +25,11 @@ describe('Person Page component', () => {
       </Provider>
     );
     expect(container).toMatchSnapshot();
+    expect(getByText('mockName1')).toBeVisible();
+    expect(getByText('Birth year: mockBirthYear')).toBeVisible();
+    expect(getByText('mockProducer1: 2')).toBeVisible();
+    expect(getByText('mockProducer2: 1')).toBeVisible();
+    expect(getByText('mockProducer3: 1')).toBeVisible();
   });
 
   it('it is fetching with Response error', () => {

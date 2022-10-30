@@ -3,15 +3,15 @@ export const mockPeople = {
     "edges": [
       {
         "node": {
-          "name": "Luke Skywalkexxr",
-          "id": "cGVvcGxlOjE=",
+          "name": "mockName1",
+          "id": "mockId1",
           "species": 50
         }
       },
       {
         "node": {
-          "name": "C-3PO",
-          "id": "cGVvcGxlOjI=",
+          "name": "mockName2",
+          "id": "mockId2",
           "species": {
             "averageHeight": null
           }

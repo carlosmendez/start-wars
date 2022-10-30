@@ -6,13 +6,13 @@ exports[`PersonFilms component renders correctly 1`] = `
     class="css-8qcg57"
   >
     <h3>
-      A New Hope
+      mockFilm1
     </h3>
     <p>
       <small>
         Release date: 
       </small>
-      1977-05-25
+      mockReleaseDate1
     </p>
     <p>
       Number of planets without water in the film: 
@@ -24,11 +24,13 @@ exports[`PersonFilms component renders correctly 1`] = `
   >
     <a
       class="hidden css-9w870c"
+      data-testid="films-prev"
     >
       Prev
     </a>
     <a
       class=" css-9w870c"
+      data-testid="films-next"
     >
       Next
     </a>

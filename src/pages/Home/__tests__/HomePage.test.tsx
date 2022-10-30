@@ -2,9 +2,9 @@ import React from 'react';
 import { render } from '@testing-library/react'
 import { Provider, CombinedError } from 'urql';
 import { never, fromValue } from 'wonka';
-import HomePage from "../HomePage";
 import { BrowserRouter as Router } from 'react-router-dom';
-import { mockPeople} from "../__mocks__/mocksPeople";
+import HomePage from "../HomePage";
+import { mockPeople } from "../__mocks__/mocksPeople";
 
 describe('Home Page component', () => {
   it('It renders correctly with response Success', () => {
@@ -16,7 +16,7 @@ describe('Home Page component', () => {
           }
         }),
     };
-    const {container} = render(
+    const {container, getByText} = render(
       // @ts-ignore
       <Provider value={successState}>
         <Router>
@@ -25,6 +25,14 @@ describe('Home Page component', () => {
       </Provider>
     );
     expect(container).toMatchSnapshot();
+
+    expect(getByText('mockName1')).toBeVisible();
+    expect(getByText('mockName2')).toBeVisible();
+    const anchorElement1 = container.querySelector('a');
+    expect(anchorElement1).toHaveAttribute(
+      'href',
+      '/person/mockId1',
+    );
   });
 
   it('it is fetching with Response error', () => {
@@ -58,5 +66,4 @@ describe('Home Page component', () => {
     expect(container).toMatchSnapshot();
     expect(fetchingState.executeQuery).toBeCalledTimes(1);
   });
-
 });

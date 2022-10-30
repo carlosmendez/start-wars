@@ -1,7 +1,7 @@
 export const mockFilms = [
   {
-    "title": "A New Hope",
-    "releaseDate": "1977-05-25",
+    "title": "mockFilm1",
+    "releaseDate": "mockReleaseDate1",
     "planetConnection": {
       "planets": [
         {
@@ -21,8 +21,8 @@ export const mockFilms = [
     ]
   },
   {
-    "title": "The Empire Strikes Back",
-    "releaseDate": "1980-05-17",
+    "title": "mockFilm2",
+    "releaseDate": "mockReleaseDate2",
     "planetConnection": {
       "planets": [
         {
@@ -45,8 +45,8 @@ export const mockFilms = [
     ]
   },
   {
-    "title": "Return of the Jedi",
-    "releaseDate": "1983-05-25",
+    "title": "mockFilm3",
+    "releaseDate": "mockReleaseDate3",
     "planetConnection": {
       "planets": [
         {
@@ -73,8 +73,8 @@ export const mockFilms = [
     ]
   },
   {
-    "title": "Revenge of the Sith",
-    "releaseDate": "2005-05-19",
+    "title": "4",
+    "releaseDate": "mockReleaseDate4",
     "planetConnection": {
       "planets": [
         {

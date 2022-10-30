@@ -20,9 +20,9 @@ exports[`Home Page component It renders correctly with response Success 1`] = `
     >
       <a
         class="css-z43cc1"
-        href="/person/cGVvcGxlOjE="
+        href="/person/mockId1"
       >
-        Luke Skywalkexxr
+        mockName1
       </a>
     </div>
     <div
@@ -30,9 +30,9 @@ exports[`Home Page component It renders correctly with response Success 1`] = `
     >
       <a
         class="css-z43cc1"
-        href="/person/cGVvcGxlOjI="
+        href="/person/mockId2"
       >
-        C-3PO
+        mockName2
       </a>
     </div>
   </div>
