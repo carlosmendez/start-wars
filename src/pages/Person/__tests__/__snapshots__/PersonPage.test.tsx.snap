@@ -1,62 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Person Page component It renders correctly with response Success 1`] = `
-[
+<div>
   <div
-    className="css-1mxmwia"
+    class="css-1mxmwia"
   >
     <h1>
-      START WARS
+      STAR WARS
     </h1>
     <h2>
       Luke Skywalker
     </h2>
-  </div>,
+  </div>
   <p>
-    <small>
-      Birth year:
-    </small>
-     
+    Birth year: 
     19BBY
-  </p>,
+  </p>
   <p>
-    List of producers the person has worked with and how many times.
-  </p>,
+    <i>
+      List of producers the person has worked with and how many times.
+    </i>
+  </p>
   <p>
     Gary Kurtz
     : 
     2
-  </p>,
+  </p>
   <p>
     George Lucas
     : 
     1
-  </p>,
+  </p>
   <p>
     Howard G. Kazanjian
     : 
     1
-  </p>,
+  </p>
   <p>
     Rick McCallum
     : 
     4
-  </p>,
+  </p>
   <span
-    className="css-ht9l73"
+    class="css-ht9l73"
   >
     <a
       href="/"
-      onClick={[Function]}
     >
       Back
     </a>
-  </span>,
-]
+  </span>
+</div>
+`;
+
+exports[`Person Page component it is calling fetch 1`] = `
+<div>
+  <p>
+    Loading...
+  </p>
+</div>
 `;
 
 exports[`Person Page component it is fetching with Response error 1`] = `
-<p>
-  [Network] something went wrong!
-</p>
+<div>
+  <p>
+    [Network] something went wrong!
+  </p>
+</div>
 `;

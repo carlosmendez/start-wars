@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import {render} from "@testing-library/react";
 import { PersonFilms } from "../PersonFilms";
 import { mockFilms } from "../__mocks__/mocksFilm";
 
@@ -9,13 +9,10 @@ const props = {
 
 describe('PersonFilms component', () => {
   it('renders correctly', () => {
-    const jsx = (
+    const {container} = render(
       // @ts-ignore
       <PersonFilms {...props} />
     );
-    const tree = renderer
-      .create(jsx)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

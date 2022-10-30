@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import {render} from "@testing-library/react";
 import { Provider, CombinedError } from 'urql';
 import { never, fromValue } from 'wonka';
 import {BrowserRouter as Router} from 'react-router-dom';
@@ -16,8 +16,7 @@ describe('Person Page component', () => {
           }
         }),
     };
-
-    const jsx = (
+    const {container} = render(
       // @ts-ignore
       <Provider value={successState}>
         <Router>
@@ -25,10 +24,7 @@ describe('Person Page component', () => {
         </Router>
       </Provider>
     );
-    const tree = renderer
-      .create(jsx)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('it is fetching with Response error', () => {
@@ -40,33 +36,26 @@ describe('Person Page component', () => {
           }),
         }),
     };
-
-    const jsx = (
+    const {container} = render(
       // @ts-ignore
       <Provider value={errorState}>
         <PersonPage />
       </Provider>
     );
-    const tree = renderer
-      .create(jsx)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('it is calling fetch', () => {
     const fetchingState = {
       executeQuery: jest.fn(() => never),
     };
-    const jsx = (
+    const {container} = render(
       // @ts-ignore
       <Provider value={fetchingState}>
         <PersonPage />
       </Provider>
     );
-    renderer
-      .create(jsx)
-      .toJSON();
-
+    expect(container).toMatchSnapshot();
     expect(fetchingState.executeQuery).toBeCalledTimes(1);
   });
 

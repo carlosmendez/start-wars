@@ -34,8 +34,8 @@ const PersonPage = () => {
       <MainTitle>
         <h2>{name}</h2>
       </MainTitle>
-      <p><small>Birth year:</small> {birthYear}</p>
-      <p>List of producers the person has worked with and how many times.</p>
+      <p>Birth year: {birthYear}</p>
+      <p><i>List of producers the person has worked with and how many times.</i></p>
       { producers && Object.entries(producers).map(([key, value], index) => (
         <p key={index}>{key}: {value}</p>
       ))}

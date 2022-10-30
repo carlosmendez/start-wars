@@ -1,19 +1,16 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import {render} from "@testing-library/react";
 import { App } from "../App";
 
 const MockChildren = () => <div>....mockChildrenComponent</div>;
 
 describe('App component', () => {
   it('renders correctly', () => {
-    const jsx = (
+    const {container} = render(
       <App>
         <MockChildren />
       </App>
     );
-    const tree = renderer
-      .create(jsx)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

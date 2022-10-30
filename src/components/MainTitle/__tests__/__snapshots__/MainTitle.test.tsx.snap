@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MainTitle component renders correctly 1`] = `
-<div
-  className="css-1mxmwia"
->
-  <h1>
-    START WARS
-  </h1>
-  mockTitle
+<div>
+  <div
+    class="css-1mxmwia"
+  >
+    <h1>
+      STAR WARS
+    </h1>
+    mock title
+  </div>
 </div>
 `;

@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PersonFilms component renders correctly 1`] = `
-[
+<div>
   <div
-    className="css-8qcg57"
+    class="css-8qcg57"
   >
     <h3>
       A New Hope
@@ -18,22 +18,20 @@ exports[`PersonFilms component renders correctly 1`] = `
       Number of planets without water in the film: 
       0
     </p>
-  </div>,
+  </div>
   <div
-    className="css-lk48ot"
+    class="css-lk48ot"
   >
     <a
-      className="hidden css-9w870c"
-      onClick={[Function]}
+      class="hidden css-9w870c"
     >
       Prev
     </a>
     <a
-      className=" css-9w870c"
-      onClick={[Function]}
+      class=" css-9w870c"
     >
       Next
     </a>
-  </div>,
-]
+  </div>
+</div>
 `;

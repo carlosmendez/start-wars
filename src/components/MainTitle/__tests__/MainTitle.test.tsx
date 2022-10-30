@@ -1,15 +1,15 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react'
 import { MainTitle } from "../MainTitle";
 
 describe('MainTitle component', () => {
-  it('renders correctly', () => {
-    const jsx = (
-      <MainTitle>mockTitle</MainTitle>
+  const mockTitle = 'mock title';
+  const h1Text = 'STAR WARS';
+  test('renders correctly', () => {
+    const {container, getByText} = render(
+      <MainTitle>{mockTitle}</MainTitle>
     );
-    const tree = renderer
-      .create(jsx)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
+    expect(getByText(h1Text)).toBeVisible();
+    expect(getByText(mockTitle)).toBeVisible();
   });
 });

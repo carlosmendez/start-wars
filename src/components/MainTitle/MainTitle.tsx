@@ -10,7 +10,7 @@ const MainTitle = ({
 }: MainTitleProps) => {
   return (
     <StyledMainTitle>
-      <h1>START WARS</h1>
+      <h1>STAR WARS</h1>
       {children}
     </StyledMainTitle>
   )
