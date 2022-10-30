@@ -1,4 +1,8 @@
-import {StyleNavitationContainer, StyledButton} from './styled-components';
+import {
+  StyledFilmContainer,
+  StyleNavitationContainer,
+  StyledButton
+} from './styled-components';
 import usePagination from "../../utils/hooks/usePagination";
 import { ButtonVisibilityEnum } from "./constants";
 
@@ -33,13 +37,14 @@ const PersonFilms = ({
   const numPlanetsNoWater = getNumPlanetsNoWater(planets);
   return (
     <>
-      <h2>Films</h2>
-      <p>{title}</p>
-      <p>{releaseDate}</p>
-      <p>Number of planets without water in the film: {numPlanetsNoWater}</p>
+      <StyledFilmContainer>
+        <h3>{title}</h3>
+        <p><small>Release date: </small>{releaseDate}</p>
+        <p>Number of planets without water in the film: {numPlanetsNoWater}</p>
+      </StyledFilmContainer>
       <StyleNavitationContainer>
-        <StyledButton {...(!hasPrevPage && { visibility: ButtonVisibilityEnum.HIDDEN })} onClick={prevPage}>Prev</StyledButton>
-        <StyledButton {...(!hasNextPage && { visibility: ButtonVisibilityEnum.HIDDEN })} onClick={nextPage}>Next</StyledButton>
+        <StyledButton className={!hasPrevPage ? ButtonVisibilityEnum.HIDDEN : ''} onClick={prevPage}>Prev</StyledButton>
+        <StyledButton className={!hasNextPage ? ButtonVisibilityEnum.HIDDEN : ''} onClick={nextPage}>Next</StyledButton>
       </StyleNavitationContainer>
     </>
   )

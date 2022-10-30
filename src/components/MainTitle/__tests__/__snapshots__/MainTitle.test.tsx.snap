@@ -2,7 +2,7 @@
 
 exports[`MainTitle component renders correctly 1`] = `
 <h1
-  className="css-1yltisf"
+  className="css-mj9wkl"
 >
   Star Wars characters
 </h1>

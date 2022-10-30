@@ -3,7 +3,7 @@
 exports[`Home Page component It renders correctly with response Success 1`] = `
 [
   <h1
-    className="css-1yltisf"
+    className="css-mj9wkl"
   >
     STAR WARS characters
   </h1>,
@@ -11,10 +11,10 @@ exports[`Home Page component It renders correctly with response Success 1`] = `
     className="css-7ydzf1"
   >
     <div
-      className="css-1iya9dl"
+      className="css-xdun4v"
     >
       <a
-        className="css-2os3iq"
+        className="css-z43cc1"
         href="/person/cGVvcGxlOjE="
         onClick={[Function]}
       >
@@ -22,10 +22,10 @@ exports[`Home Page component It renders correctly with response Success 1`] = `
       </a>
     </div>
     <div
-      className="css-1iya9dl"
+      className="css-xdun4v"
     >
       <a
-        className="css-2os3iq"
+        className="css-z43cc1"
         href="/person/cGVvcGxlOjI="
         onClick={[Function]}
       >

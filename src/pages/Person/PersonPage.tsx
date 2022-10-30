@@ -32,16 +32,14 @@ const PersonPage = () => {
   return (
     <>
       <MainTitle name={name} />
-      <h2>Birth year: {birthYear}</h2>
-      <h3>List of producers the person has worked with and how many times.</h3>
-      <ul>
+      <p><small>Birth year:</small> {birthYear}</p>
+      <p>List of producers the person has worked with and how many times.</p>
       { producers && Object.entries(producers).map(([key, value], index) => (
-        <li key={index}>{key}: {value}</li>
+        <p key={index}>{key}: {value}</p>
       ))}
-      </ul>
       {averageHeight && <h2>Species average height: {averageHeight}</h2>}
       { personId && <PersonFilms films={films} /> }
-      <Link to="/"><StyledButton>Back</StyledButton></Link>
+      <StyledButton><Link to="/">Back</Link></StyledButton>
     </>
   );
 };

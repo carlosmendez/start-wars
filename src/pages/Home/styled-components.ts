@@ -16,7 +16,6 @@ export const StyledGridItem = styled.div`
   @media only screen and (min-width: 768px) {
     grid-column-end: span 4;
   }
-
   background-color: #282727;
   border-radius: 8px;
   text-align: center;
@@ -32,6 +31,6 @@ export const StyledLink = styled(Link)`
   text-transform: uppercase;
   padding: 30px;
   &:hover {
-    color: #EDEC4F;
+    color: rgb(255, 228, 0);
   }
 `;

@@ -3,49 +3,50 @@
 exports[`Person Page component It renders correctly with response Success 1`] = `
 [
   <h1
-    className="css-1yltisf"
+    className="css-mj9wkl"
   >
     Luke Skywalker
   </h1>,
-  <h2>
-    Birth year: 
+  <p>
+    <small>
+      Birth year:
+    </small>
+     
     19BBY
-  </h2>,
-  <h3>
+  </p>,
+  <p>
     List of producers the person has worked with and how many times.
-  </h3>,
-  <ul>
-    <li>
-      Gary Kurtz
-      : 
-      2
-    </li>
-    <li>
-      George Lucas
-      : 
-      1
-    </li>
-    <li>
-      Howard G. Kazanjian
-      : 
-      1
-    </li>
-    <li>
-      Rick McCallum
-      : 
-      4
-    </li>
-  </ul>,
-  <a
-    href="/"
-    onClick={[Function]}
+  </p>,
+  <p>
+    Gary Kurtz
+    : 
+    2
+  </p>,
+  <p>
+    George Lucas
+    : 
+    1
+  </p>,
+  <p>
+    Howard G. Kazanjian
+    : 
+    1
+  </p>,
+  <p>
+    Rick McCallum
+    : 
+    4
+  </p>,
+  <span
+    className="css-10pwxnt"
   >
-    <button
-      className="css-g0id1a"
+    <a
+      href="/"
+      onClick={[Function]}
     >
       Back
-    </button>
-  </a>,
+    </a>
+  </span>,
 ]
 `;
 

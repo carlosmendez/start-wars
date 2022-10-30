@@ -2,35 +2,38 @@
 
 exports[`PersonFilms component renders correctly 1`] = `
 [
-  <h2>
-    Films
-  </h2>,
-  <p>
-    A New Hope
-  </p>,
-  <p>
-    1977-05-25
-  </p>,
-  <p>
-    Number of planets without water in the film: 
-    0
-  </p>,
   <div
-    className="css-h8cf3b"
+    className="css-8qcg57"
   >
-    <button
-      className="css-1c0184g"
+    <h3>
+      A New Hope
+    </h3>
+    <p>
+      <small>
+        Release date: 
+      </small>
+      1977-05-25
+    </p>
+    <p>
+      Number of planets without water in the film: 
+      0
+    </p>
+  </div>,
+  <div
+    className="css-2g5sox"
+  >
+    <a
+      className="hidden css-34vzbs"
       onClick={[Function]}
-      visibility="hidden"
     >
       Prev
-    </button>
-    <button
-      className="css-fgi0ou"
+    </a>
+    <a
+      className=" css-34vzbs"
       onClick={[Function]}
     >
       Next
-    </button>
+    </a>
   </div>,
 ]
 `;
