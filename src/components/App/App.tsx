@@ -10,9 +10,9 @@ type AppProps = {
 const GlobalStyles = () => <Global styles={css`
   ${emotionNormalize}
   body {
-    color: #feda4a;
-    background-color: #000;
-    font-family: sans-serif;
+    font-family: DIN, Helvetica, Arial, sans-serif;
+    background-color: #151515;
+    color: #FFF;
   }
 `}
 />;

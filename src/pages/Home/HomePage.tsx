@@ -18,7 +18,7 @@ const HomePage = () => {
 
   return (
     <>
-      <MainTitle name="Star Wars characters" />
+      <MainTitle name="STAR WARS characters" />
       <StyledGrid>
         {edges.map((item: AllPeopleNodeType, index: number) => (
           <StyledGridItem key={index}>

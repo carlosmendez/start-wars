@@ -16,22 +16,22 @@ export const StyledGridItem = styled.div`
   @media only screen and (min-width: 768px) {
     grid-column-end: span 4;
   }
-  
-  border: 1px solid #feda4a;;
+
+  background-color: #282727;
+  border-radius: 8px;
   text-align: center;
   margin: 8px;
 `;
 
 export const StyledLink = styled(Link)`
+  color: #DDD;
   display: block;
-  color: #feda4a;
+  font-weight: 800;
+  font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 30px;
   &:hover {
-    font-weight: bold;
-    opacity: 0.5;
-    background-color: #feda4a;
-    color: #000;
+    color: #EDEC4F;
   }
 `;
