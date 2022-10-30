@@ -14,7 +14,7 @@ const PersonPage = () => {
   } = useGetPersonFilms({ personId });
 
   if (fetching) return <p>Loading...</p>;
-  if (error) return <p>Oh no... {error.message}</p>;
+  if (error) return <p>{error.message}</p>;
 
   const { person } = data;
   const { name, birthYear, species, filmConnection } = person;
@@ -23,7 +23,7 @@ const PersonPage = () => {
 
   return (
     <>
-      <MainTitle>{name}</MainTitle>
+      <MainTitle name={name} />
       <h2>Birth year: {birthYear}</h2>
       <h2>List of producers the person has worked with and how many times.</h2>
       {averageHeight && <h2>Species average height: {averageHeight}</h2>}

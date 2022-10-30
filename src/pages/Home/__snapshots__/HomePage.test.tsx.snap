@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page component It renders correctly with response Success 1`] = `
+[
+  <h1
+    className="css-1yltisf"
+  >
+    Star Wars characters
+  </h1>,
+  <div
+    className="css-7ydzf1"
+  >
+    <div
+      className="css-16d4tpu"
+    >
+      <a
+        className="css-iwdcak"
+        href="/person/cGVvcGxlOjE="
+        onClick={[Function]}
+      >
+        Luke Skywalkexxr
+      </a>
+    </div>
+    <div
+      className="css-16d4tpu"
+    >
+      <a
+        className="css-iwdcak"
+        href="/person/cGVvcGxlOjI="
+        onClick={[Function]}
+      >
+        C-3PO
+      </a>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Home Page component it is fetching with Response error 1`] = `
+<p>
+  [Network] something went wrong!
+</p>
+`;

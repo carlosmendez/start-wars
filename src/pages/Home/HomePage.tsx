@@ -11,14 +11,14 @@ const HomePage = () => {
   } = useGetPeople();
 
   if (fetching) return <p>Loading...</p>;
-  if (error) return <p>Oh no... {error.message}</p>;
+  if (error) return <p>{error.message}</p>;
 
   const {allPeople} = data;
   const {edges} = allPeople;
 
   return (
     <>
-      <MainTitle>People</MainTitle>
+      <MainTitle name="Star Wars characters" />
       <StyledGrid>
         {edges.map((item: AllPeopleNodeType, index: number) => (
           <StyledGridItem key={index}>

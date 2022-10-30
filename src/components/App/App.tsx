@@ -4,7 +4,7 @@ import emotionNormalize from 'emotion-normalize';
 import { StyledMain } from "./styled-components";
 
 type AppProps = {
-  children: ReactNode,
+  children: ReactNode;
 };
 
 const GlobalStyles = () => <Global styles={css`
@@ -28,4 +28,4 @@ const App = ({
   )
 }
 
-export {App};
+export { App };

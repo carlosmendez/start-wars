@@ -2,15 +2,15 @@ import React, { ReactNode } from 'react';
 import { StyledMainTitle } from "./styled-components";
 
 type MainTitleProps = {
-  children: ReactNode;
+  name: string;
 };
 
 const MainTitle = ({
-  children,
+  name,
 }: MainTitleProps) => {
   return (
     <StyledMainTitle>
-      {children}
+      {name}
     </StyledMainTitle>
   )
 }

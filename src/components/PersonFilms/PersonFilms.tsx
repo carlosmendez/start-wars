@@ -3,7 +3,7 @@ import usePagination from "../../utils/hooks/usePagination";
 import { ButtonVisibilityEnum } from "./constants";
 
 type PersonFilmsProps = {
-  films: FilmType[],
+  films: FilmType[];
 };
 
 interface PlanetType {
