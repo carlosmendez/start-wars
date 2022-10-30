@@ -5,16 +5,16 @@ exports[`Home Page component It renders correctly with response Success 1`] = `
   <h1
     className="css-1yltisf"
   >
-    Star Wars characters
+    STAR WARS characters
   </h1>,
   <div
     className="css-7ydzf1"
   >
     <div
-      className="css-16d4tpu"
+      className="css-1iya9dl"
     >
       <a
-        className="css-iwdcak"
+        className="css-2os3iq"
         href="/person/cGVvcGxlOjE="
         onClick={[Function]}
       >
@@ -22,10 +22,10 @@ exports[`Home Page component It renders correctly with response Success 1`] = `
       </a>
     </div>
     <div
-      className="css-16d4tpu"
+      className="css-1iya9dl"
     >
       <a
-        className="css-iwdcak"
+        className="css-2os3iq"
         href="/person/cGVvcGxlOjI="
         onClick={[Function]}
       >
