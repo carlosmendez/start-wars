@@ -12,8 +12,8 @@ type FilmType = {
 }
 
 type PageInfoType = {
-  hasNextPage: true
-  hasPreviousPage: true,
+  hasNextPage: boolean,
+  hasPreviousPage: boolean,
   startCursor: string,
   endCursor: string,
 }

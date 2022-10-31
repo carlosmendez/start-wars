@@ -22,8 +22,8 @@ const HomePage = () => {
         <h2>Caracthers</h2>
       </MainTitle>
       <StyledGrid>
-        {edges.map((item: AllPeopleNodeType, index: number) => (
-          <StyledGridItem key={index}>
+        {edges.map((item: AllPeopleNodeType) => (
+          <StyledGridItem key={item.node.id}>
             <StyledLink to={`/person/${item.node.id}`}>
               {item.node.name}
             </StyledLink>
@@ -34,4 +34,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export { HomePage };

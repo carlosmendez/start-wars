@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { Global, css } from '@emotion/react';
 import emotionNormalize from 'emotion-normalize';
 import { StyledMain } from "./styled-components";
-import * as UI from '../../utils/ui/constants';
+import * as UI from '../utils/ui/constants';
 
 type AppProps = {
   children: ReactNode;

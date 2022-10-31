@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import { Provider, CombinedError } from 'urql';
 import { never, fromValue } from 'wonka';
 import { BrowserRouter as Router } from 'react-router-dom';
-import PersonPage from "../PersonPage";
+import { PersonPage } from "../PersonPage";
 import { mockPerson } from '../__mocks__/mocksPerson';
 
 describe('Person Page component', () => {
